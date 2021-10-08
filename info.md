@@ -12,3 +12,12 @@ The advantage of using steganography over cryptography alone is that the intende
 Steganography works have been carried out on different transmission media like images, video, text, or audio.
 
 ![type of steganography](./static/types.png)
+
+# Basic Steganographic Model
+
+![stegano model](./static/stegano_model.png)
+
+- The original image file(X) and secret message (M) that needs to be hidden are fed into a steganographic encoder as input. 
+- Tteganographic Encoder function, f(X,M,K) embeds the secret message into a cover image file by using techniques like least significant bit encoding. 
+- The resulting stego image looks very similar to your cover image file, with no visible changes. This completes encoding. 
+- To retrieve the secret message, stego object is fed into Steganographic Decoder.
