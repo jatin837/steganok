@@ -21,3 +21,10 @@ Steganography works have been carried out on different transmission media like i
 - Tteganographic Encoder function, f(X,M,K) embeds the secret message into a cover image file by using techniques like least significant bit encoding. 
 - The resulting stego image looks very similar to your cover image file, with no visible changes. This completes encoding. 
 - To retrieve the secret message, stego object is fed into Steganographic Decoder.
+
+
+# Least Significant Bit Steganography
+- We can describe a digital image as a finite set of digital values, called pixels. 
+- Pixels are the smallest individual element of an image, holding values that represent the brightness of a given color at any specific point. So we can think of an image as a matrix (or a two-dimensional array) of pixels which contains a fixed number of rows and columns.
+Least Significant Bit (LSB) is a technique in which the last bit of each pixel is modified and replaced with the secret message’s data bit.
+
