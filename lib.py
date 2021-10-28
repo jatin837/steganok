@@ -126,6 +126,4 @@ def Steganography():
       print("Decoded message is " + decode_text()) 
     else: 
         raise Exception("Enter correct input") 
-          
-Steganography() #encode image
 
