@@ -42,8 +42,14 @@ class Image():
                 10, 
                 cv2.KMEANS_RANDOM_CENTERS)
 
-        self.centers = np.uint32(self.centers)
+        self.centers = np.uint8(self.centers)
         self.labels = self.labels.reshape(1, -1)
+
+    def get_segmented_image(self):
+        pxl_vals = self.centers[self.labels]
+        segmented_img = pxl_vals.reshape(self.image.shape)
+        return segmented_img
+
 
 
     def get_indx_for_cluster(self, k):
